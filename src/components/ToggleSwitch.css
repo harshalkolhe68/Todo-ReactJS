@@ -1,0 +1,55 @@
+body {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.toggle-switch {
+
+  width: 200px;
+  height: 80px;
+  border-radius: 40px;
+  background-color: #ccc;
+  position: absolute;
+  cursor: pointer;
+  padding: 20px;
+  margin: 200px 0px 0px -150px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.switch {
+  width: 80px;
+  height: 80px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  top: 15px;
+  left: 5px;
+  transition: transform 0.3s linear, background-color 0.3s linear;
+  border: 0.1rem solid #ccc;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.on {
+  background-color: #4caf50;
+  transform: translateX(150px);
+  -webkit-transform: translateX(150px);
+  -moz-transform: translateX(150px);
+  -ms-transform: translateX(150px);
+  -o-transform: translateX(150px);
+}
+
+.off {
+  background-color: #f44336;
+  transform: translateX(0);
+}
+
+.switch-state {
+  margin: 0 10px;
+  text-transform: uppercase;
+}
